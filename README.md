@@ -23,7 +23,7 @@ Quick links:
 - [projects/decoders](projects/decoders)
 - [projects/Gates](projects/Gates)
 - [projects/Full_adder](projects/Full_adder)
-- [projects/half](projects/half)
+- [projects/half_adder](projects/half_adder)
 - [projects/binary-grey](projects/binary-grey)
 
 ## How to run (Vivado xsim)
