@@ -1,0 +1,51 @@
+# Vivado/Xilinx generated files and caches
+**/.Xil/**
+**/*.cache/**
+**/*.hw/**
+**/*.ip_user_files/**
+**/*.runs/**
+**/*.sim/**
+**/*.gen/**
+**/*.data/**
+**/behav/**
+**/xsim/**
+
+# Vivado project files and logs
+**/*.xpr
+**/*.jou
+**/*.log
+**/*.str
+**/*.wdb
+**/*.pb
+**/*.rpt
+**/*.dmp
+**/*.wcfg
+**/*.wdf
+**/*.lpr
+**/*.sdb
+**/*.rlx
+
+# Compiled/binary/object
+**/*.obj
+**/*.o
+**/*.dll
+**/*.so
+
+# Archives
+**/*.zip
+**/*.tar
+**/*.gz
+**/*.tgz
+
+# Editors/OS
+.idea/
+.vscode/
+**/*.swp
+**/*.tmp
+~$*
+
+# Keep only HDL sources and testbenches
+!**/sources_1/new/*.v
+!**/sim_1/new/*.v
+!**/*.md
+!/.gitattributes

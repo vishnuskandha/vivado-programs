@@ -1,0 +1,14 @@
+# Normalize line endings
+* text=auto
+
+# Treat Verilog/SystemVerilog as text and enable diffs
+*.v  text diff=verilog
+*.sv text diff=verilog
+
+# Useful diffs for TCL and constraints
+*.tcl text
+*.xdc text
+
+# Custom verilog diff driver (optional)
+[diff  verilog]
+xfuncname = ^\s*(module|function|task)\s+.*
