@@ -1,26 +1,12 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 21.08.2025 22:48:20
-// Design Name: 
-// Module Name: dut
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+module dut (
+    input  [1:0] sel,
+    input        en,
+    output [3:0] y
+);
 
+assign y[0] = en & ~sel[1] & ~sel[0];
+assign y[1] = en & ~sel[1] &  sel[0];
+assign y[2] = en &  sel[1] & ~sel[0];
+assign y[3] = en &  sel[1] &  sel[0];
 
-module dut(
-
-    );
 endmodule

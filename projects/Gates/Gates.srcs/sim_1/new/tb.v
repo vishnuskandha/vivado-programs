@@ -24,10 +24,10 @@ initial begin
   a=0; b=1; #10;
  $display("%b %b | %b %b %b %b %b %b %b",a,b,and_out,or_out,not_a,nand_out,nor_out,xor_out,xnor_out);
  
-  a=0; b=0; #10;
+  a=1; b=0; #10;
  $display("%b %b | %b %b %b %b %b %b %b",a,b,and_out,or_out,not_a,nand_out,nor_out,xor_out,xnor_out);
  
-   a=0; b=1; #10;
+   a=1; b=1; #10;
  $display("%b %b | %b %b %b %b %b %b %b",a,b,and_out,or_out,not_a,nand_out,nor_out,xor_out,xnor_out);
  
  $finish;
