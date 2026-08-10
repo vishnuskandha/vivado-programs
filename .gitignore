@@ -30,6 +30,11 @@
 **/*.o
 **/*.dll
 **/*.so
+**/*.dcp
+**/*.bit
+**/*.mcs
+**/*.bin
+**/*.bitb
 
 # Archives
 **/*.zip

@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  repo-sanity:
+    name: Repo sanity checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every project contains Verilog sources
+        run: |
+          fail=0
+          for dir in projects/*/; do
+            name="$(basename "$dir")"
+            count=$(find "$dir" -type f -name '*.v' | wc -l)
+            echo "project '$name': $count Verilog file(s)"
+            if [ "$count" -eq 0 ]; then
+              echo "::error::$name has no Verilog source files."
+              fail=1
+            fi
+          done
+          exit "$fail"
+
+      - name: No large build artifacts tracked
+        run: |
+          if git ls-files | grep -Ei '(\.dcp|\.bit|\.mcs|\.bin|\.runs/|\.cache/)'; then
+            echo "::error::Large build artifacts are tracked in the repository."
+            exit 1
+          fi
+          echo "No build artifacts tracked."
+
+      - name: Project index matches directory listing
+        run: |
+          set -e
+          for dir in projects/*/; do
+            name="$(basename "$dir")"
+            if ! grep -qF "$name" README.md; then
+              echo "::error::Project '$name' is missing from the README index."
+              exit 1
+            fi
+          done
+          echo "All projects are listed in the README."

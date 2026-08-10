@@ -1,1 +1,6 @@
--NoNewline
+* text=auto
+
+*.v text eol=lf
+*.md text eol=lf
+*.gitignore text
+*.gitattributes text
