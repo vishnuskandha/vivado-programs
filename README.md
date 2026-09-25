@@ -1,5 +1,15 @@
 # Vivado Verilog Projects
 
+
+<!-- README polish: repository metadata badges -->
+<p>
+  <a href="https://github.com/vishnuskandha/vivado-programs"><img alt="GitHub stars" src="https://img.shields.io/github/stars/vishnuskandha/vivado-programs?style=for-the-badge&logo=github&label=Stars"></a>
+  <a href="https://github.com/vishnuskandha/vivado-programs/fork"><img alt="GitHub forks" src="https://img.shields.io/github/forks/vishnuskandha/vivado-programs?style=for-the-badge&logo=github&label=Forks"></a>
+  <a href="https://github.com/vishnuskandha/vivado-programs/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/vishnuskandha/vivado-programs?style=for-the-badge&logo=github&label=Issues"></a>
+  <a href="https://github.com/vishnuskandha/vivado-programs/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/vishnuskandha/vivado-programs?style=for-the-badge&logo=git&label=Updated"></a>
+</p>
+<!-- End README polish -->
+
 [![CI](https://github.com/vishnuskandha/vivado-programs/actions/workflows/ci.yml/badge.svg)](https://github.com/vishnuskandha/vivado-programs/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
