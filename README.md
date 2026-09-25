@@ -1,4 +1,15 @@
+<div align="center">
+
 # Vivado Verilog Projects
+
+
+<!-- README polish: repository metadata badges -->
+<p>
+  <a href="https://github.com/vishnuskandha/vivado-programs"><img alt="GitHub stars" src="https://img.shields.io/github/stars/vishnuskandha/vivado-programs?style=for-the-badge&logo=github&label=Stars"></a>
+  <a href="https://github.com/vishnuskandha/vivado-programs/fork"><img alt="GitHub forks" src="https://img.shields.io/github/forks/vishnuskandha/vivado-programs?style=for-the-badge&logo=github&label=Forks"></a>
+  <a href="https://github.com/vishnuskandha/vivado-programs/issues"><img alt="GitHub issues" src="https://img.shields.io/github
+
+</div>
 
 
 <!-- README polish: repository metadata badges -->
